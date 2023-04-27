@@ -1,5 +1,8 @@
 # Custom
 *.DS_Store
+*.drawio
+*.drawio.*
+!*.drawio.svg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "artifactmodel"
+version = "0.1.0"
+description = ""
+authors = ["Florian Angermeir <florian.angermeir@tum.de>"]
+license = "GPL-3.0-only"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+svgwrite = "^1.4.3"
+Flask = "^2.3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
