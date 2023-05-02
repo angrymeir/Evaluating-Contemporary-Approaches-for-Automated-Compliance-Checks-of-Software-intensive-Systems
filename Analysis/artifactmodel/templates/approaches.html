@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+  {% if approaches | count %}
+  <table class="table table-hover">
+    <thead>
+      <th scope="col">Paper Title</th>
+      <th scope="col">Domain</th>
+      <th scope="col">Regulation</th>
+	  <th scope="col">Automation</th>
+      <th scope="col">Input</th>
+      <th scope="col">Output</th>
+	  <th scope="col">Automation approach</th>
+    </thead>
+    {% for approach in approaches %}
+      <tr class='clickable-row' data-href=''>
+        <td><a href='{{ url_for('details', **{'approach': approach[0]['Paper Title'].replace(' ', '_').replace('-', '_').replace('.', '_').replace(':', '_').replace('?', '_').lower()}) }}'>{{ approach[0]['Paper Title'] }}</td>
+        <td>{{ approach[0]['Application Domain'] }}</td>
+        <td>{{ approach[0]['Normative Requirements'] }}</td>
+        <td>{{ approach[0]['Automation level'] }}</td>
+        <td>{{ approach[0]['Input'] }}</td>
+        <td>{{ approach[0]['Output'] }}</td>
+        <td>{{ approach[0]['Automation approach'] }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+    <h2> No approaches, seems we have problems. </h2>
+  {% endif %}
+</div>
+
+{% endblock %}

@@ -1,11 +1,18 @@
 from flask import Flask, render_template, abort
 from parse import load_requirements, load_activities_artifacts, load_automation_approaches
 from process import filter_artifacts, filter_activities
+from glob import glob
 
 app = Flask(__name__)
 requirements = load_requirements()
 activities_artifacts = load_activities_artifacts()
-automation_approaches = load_automation_approaches()
+all_automation_approaches = load_automation_approaches()
+automation_approaches = {}
+relevant_approaches = glob('approach_visualization/*.svg')
+for name, approach in all_automation_approaches.items():
+    new_name = 'approach_visualization/{}.drawio.svg'.format(name.replace(' ', '_').replace('-', '_').replace('.', '_').replace(':', '_').replace('?', '_').lower())
+    if new_name in relevant_approaches:
+        automation_approaches[name] = approach
 
 
 def approach_is_valid(approach, approaches):
@@ -17,7 +24,8 @@ def approach_is_valid(approach, approaches):
 
 @app.route('/approaches')
 def approaches():
-    pass
+    context = {'approaches': automation_approaches.values()}
+    return render_template('approaches.html', **context)
 
 
 @app.route('/approach/<approach>')

@@ -1,16 +1,41 @@
 {% extends "base.html" %}
-{% block body %}
+{% block content %}
+<div class="container">
 <h1>{{ activities[0]['Paper Title'] }}</h1>
+<div class="text-center">
 {{ svg | safe }}
+</div>
+</div>
 
+<div class="container">
+<br>
 <hr>
+<hr>
+<br>
+</div>
 
-<h2 >Activities</h2>
+<div class="container">
+<div class="text-center">
+    <h2><b>Summary</b></h2>
+</div>
+A dumbly snooty coors light is geosynchronous. Most people believe that a bill borrows money from a chain saw from a satellite brewery, but they need to remember how accidentally the sake bomb goes to sleep. When a hammered mug is plowed, a Sam Adams toward a pool table gives lectures on morality to the pit viper. The wasted chain saw, the Citra Ninja, and an almost green Honey Brown are what made America great! Another Rolling Rock self-flagellates, and a mug from a jersey cow sweeps the floor; however, another Keystone light shares a shower with an unwisely blotched mug.
+</div>
+
+<div class="container">
+<br>
+<hr>
+<hr>
+<br>
+</div>
+<div class="container">
+<div class="text-center">
+    <h2><b>Activities</b></h2>
+</div>
 {% for activity in activities %}
 <h3 id="{{ activity['Name'].lower().replace(' ', '_').replace('-', '_').replace('.', '_').replace(':', '_').replace('?', '_') }}">
     {{ activity['Name'] }}
 </h3>
-<table>
+<table class="table table-hover">
     <tr>
         <th>Details</th>
         <td> {{ activity['Detail'] }} </td>
@@ -33,15 +58,24 @@
     </tr>
 </table>
 {% endfor %}
+</div>
 
+<div class="container">
+<br>
 <hr>
+<hr>
+<br>
+</div>
 
-<h2>Artifacts</h2>
+<div class="container">
+<div class="text-center">
+    <h2><b>Artifacts</b></h2>
+</div>
 {% for artifact in artifacts %}
 <h3 id="{{ artifact['Name'].lower().replace(' ', '_').replace('-', '_').replace('.', '_').replace(':', '_').replace('?', '_') }}">
     {{ artifact['Name'] }}
 </h3>
-<table>
+<table class="table table-hover">
     <tr>
         <th>Details</th>
         <td> {{ artifact['Detail'] }} </td>
@@ -60,5 +94,5 @@
     </tr>
 </table>
 {% endfor %}
-
+</div>
 {% endblock %}
