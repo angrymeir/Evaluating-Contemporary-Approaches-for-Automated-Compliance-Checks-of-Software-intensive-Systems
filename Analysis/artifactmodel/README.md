@@ -1,8 +1,6 @@
-1. Parse Numbers file
-- How to get data out of numbers file?
-2. Generate graph from activities
-- Get all activities for a specific paper
-- Map predecessor/sucessor
-3. Associate artifacts with activities
-4. Place activities/artifacts
-5. Instantiate activities/artifacts
+# How to use?
+
+- Install python3.10
+- Install poetry
+- Run `poetry install` to install dependencies
+- Run `poetry run flask run` and navigate to `127.0.0.1:5000/approaches`
