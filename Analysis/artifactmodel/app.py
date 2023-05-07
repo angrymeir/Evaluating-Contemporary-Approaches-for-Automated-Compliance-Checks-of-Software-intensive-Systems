@@ -22,11 +22,16 @@ def approach_is_valid(approach, approaches):
     return False
 
 
-@app.route('/approaches')
+@app.route('/')
 def approaches():
     context = {'approaches': automation_approaches.values()}
     return render_template('approaches.html', **context)
 
+
+@app.route('/requirements')
+def requirements():
+    context = {}
+    return render_template('requirements.html', **context)
 
 @app.route('/approach/<approach>')
 def details(approach):
