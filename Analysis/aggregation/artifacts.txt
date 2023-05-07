@@ -1,0 +1,90 @@
+# Compliance modelling
+## Input
+- Privacy policy (An Empirical Evaluation of GDPR Compliance Violations in Android mHealth Apps)
+- Reference architecture (Reference architecture modelling and compliance checking)
+- Privacy policy (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Processed privacy policy (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Regulation (Automated Legal Compliance Checking by Security Policy Analysis)
+- Guidelines (Automated Legal Compliance Checking by Security Policy Analysis)
+- Bridge structure (Automated Legal Compliance Checking by Security Policy Analysis)
+- Template access control policy (Automated Legal Compliance Checking by Security Policy Analysis)
+- GDPR (Data Protection by Design Tool for Automated GDPR Compliance Verification Based on Semantically Modelled Informed Consent)
+
+
+## Output
+- Annotated privacy policy (An Empirical Evaluation of GDPR Compliance Violations in Android mHealth Apps)
+- Domain specific metamodel (Reference architecture modelling and compliance checking)
+- Processed privacy policy (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Abstracted policy (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Guidelines (Automated Legal Compliance Checking by Security Policy Analysis)
+- Template access control policy (Automated Legal Compliance Checking by Security Policy Analysis)
+- Bridge structure (Automated Legal Compliance Checking by Security Policy Analysis)
+- Instantiated access control policy (Automated Legal Compliance Checking by Security Policy Analysis)
+
+# Compliance analysis
+## Input
+- Project requirements (Empirically analyzing and evaluating security features in software requirements)
+- Security standards (Empirically analyzing and evaluating security features in software requirements)
+- Android App (An Empirical Evaluation of GDPR Compliance Violations in Android mHealth Apps)
+- Behaviour analysis document (An Empirical Evaluation of GDPR Compliance Violations in Android mHealth Apps)
+- GDPR manifest (Poster: A Systems Approach to GDPR Compliance-by-Design in Web Development Stacks)
+- Data processing graph (Poster: A Systems Approach to GDPR Compliance-by-Design in Web Development Stacks)
+- Concrete architecture (Reference architecture modelling and compliance checking)
+- Reference architecture validation script (Reference architecture modelling and compliance checking)
+- Abstracted policy (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Personal data collected (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Identified metadata (AI-Enabled Automation for Completeness Checking of Privacy Policies)
+- User input (AI-Enabled Automation for Completeness Checking of Privacy Policies)
+- Decorated message sequence chart (Automated Legal Compliance Checking by Security Policy Analysis)
+- Concrete access control policy (Automated Legal Compliance Checking by Security Policy Analysis)
+- Instantiated access control policy (Automated Legal Compliance Checking by Security Policy Analysis)
+- Extracted information (A combined rule-based and machine learning approach for automated GDPR compliance checking)
+- Rules (A combined rule-based and machine learning approach for automated GDPR compliance checking)
+- Compliance checks (Data Protection by Design Tool for Automated GDPR Compliance Verification Based on Semantically Modelled Informed Consent)
+- Knowledge graph (Data Protection by Design Tool for Automated GDPR Compliance Verification Based on Semantically Modelled Informed Consent)
+- Query (Data Protection by Design Tool for Automated GDPR Compliance Verification Based on Semantically Modelled Informed Consent)
+
+## Output
+- Classification report (Empirically analyzing and evaluating security features in software requirements)
+- Completeness matrix (Empirically analyzing and evaluating security features in software requirements)
+- GDPR compliance violations (An Empirical Evaluation of GDPR Compliance Violations in Android mHealth Apps)
+- Inconsistencies (Poster: A Systems Approach to GDPR Compliance-by-Design in Web Development Stacks)
+- Compliance result (Reference architecture modelling and compliance checking)
+- Privacy policy compliance report (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Privacy practice compliance report (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Completeness checking report (AI-Enabled Automation for Completeness Checking of Privacy Policies)
+- Results (Automated Legal Compliance Checking by Security Policy Analysis)
+- Compliance result (A combined rule-based and machine learning approach for automated GDPR compliance checking)
+- Complianc result (Data Protection by Design Tool for Automated GDPR Compliance Verification Based on Semantically Modelled Informed Consent)
+
+# Compliance rule definition
+## Input
+- Domain specific metamodel (Reference architecture modelling and compliance checking)
+- Android App (Data Protection by Design Tool for Automated GDPR Compliance Verification Based on Semantically Modelled Informed Consent)
+- Protection goals (Data Protection by Design Tool for Automated GDPR Compliance Verification Based on Semantically Modelled Informed Consent)
+
+## Output
+- Reference architecture validation script (Reference architecture modelling and compliance checking)
+- Compliance checks (Data Protection by Design Tool for Automated GDPR Compliance Verification Based on Semantically Modelled Informed Consent)
+
+# Compliance target processing
+## Input
+- Annotated privacy policy (An Empirical Evaluation of GDPR Compliance Violations in Android mHealth Apps)
+- Android App (An Empirical Evaluation of GDPR Compliance Violations in Android mHealth Apps)
+- Application code (Poster: A Systems Approach to GDPR Compliance-by-Design in Web Development Stacks)
+- Domain specific metamodel (Reference architecture modelling and compliance checking)
+- Extension code (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Privacy policy (AI-Enabled Automation for Completeness Checking of Privacy Policies)
+- Questionnaire (AI-Enabled Automation for Completeness Checking of Privacy Policies)
+- Compliance document (A combined rule-based and machine learning approach for automated GDPR compliance checking)
+- Consent form (Data Protection by Design Tool for Automated GDPR Compliance Verification Based on Semantically Modelled Informed Consent)
+
+## Output
+- Behaviour analysis document (An Empirical Evaluation of GDPR Compliance Violations in Android mHealth Apps)
+- Data processing graph (Poster: A Systems Approach to GDPR Compliance-by-Design in Web Development Stacks)
+- Concrete architecture (Reference architecture modelling and compliance checking)
+- Personal data collected (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Identified metadata (AI-Enabled Automation for Completeness Checking of Privacy Policies)
+- User input (AI-Enabled Automation for Completeness Checking of Privacy Policies)
+- Extracted information (A combined rule-based and machine learning approach for automated GDPR compliance checking)
+- Knowledge graph (Data Protection by Design Tool for Automated GDPR Compliance Verification Based on Semantically Modelled Informed Consent)

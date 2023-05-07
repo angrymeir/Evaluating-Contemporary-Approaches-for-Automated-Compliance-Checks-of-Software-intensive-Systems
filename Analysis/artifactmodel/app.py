@@ -36,7 +36,7 @@ def details(approach):
         artifacts = filter_artifacts(activities_artifacts[valid_approach])
         with open('approach_visualization/{}.drawio.svg'.format(approach.lower())) as f:
             svg = f.read()
-        context = {'svg': svg, 'activities': activities, 'artifacts': artifacts}
+        context = {'svg': svg, 'activities': activities, 'artifacts': artifacts, 'approach': automation_approaches[valid_approach][0]}
         return render_template('specific.html', **context)
     else:
         abort(404)
