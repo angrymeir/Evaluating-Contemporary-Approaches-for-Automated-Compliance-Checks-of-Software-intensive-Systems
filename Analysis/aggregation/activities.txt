@@ -1,0 +1,49 @@
+### Old categories
+
+## Compliance modeling (discovery and formalization of text extracted from regulations needing compliance)
+- Policy labeling (An Empirical Evaluation of GDPR Compliance Violations in Android mHealth Apps)
+- Generate domain specific meta model (Reference architecture modelling and compliance checking)
+- Policy processing (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Policy annotation (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Identify formalization parts (Automated Legal Compliance Checking by Security Policy Analysis)
+- Specify bridge structure (Automated Legal Compliance Checking by Security Policy Analysis)
+- GDPR mapping (Data Protection by Design Tool for Automated GDPR Compliance Verification Based on Semantically Modelled Informed Consent)
+- Instantiate formal model (Automated Legal Compliance Checking by Security Policy Analysis)
+
+## Compliance checking (ensure that the formalized representations of regulations (the models) capture correctly compliance requirements)
+-> Not once in all approaches
+
+## Compliance analysis (provide insight into the state of compliance as a result of the fulfilment or violation of the compliance requirements)
+- Entailment analysis (Empirically analyzing and evaluating security features in software requirements)
+- Data transmission analysis (An Empirical Evaluation of GDPR Compliance Violations in Android mHealth Apps)
+- Policy compliance verifier (Poster: A Systems Approach to GDPR Compliance-by-Design in Web Development Stacks)
+- Compliance checking (Reference architecture modelling and compliance checking)
+- Privacy policy compliance checking (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Privacy practice compliance checking (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Completeness checking (AI-Enabled Automation for Completeness Checking of Privacy Policies)
+- Policy analysis (Automated Legal Compliance Checking by Security Policy Analysis)
+- Compliance checking (A combined rule-based and machine learning approach for automated GDPR compliance checking)
+- Compliance checking (Data Protection by Design Tool for Automated GDPR Compliance Verification Based on Semantically Modelled Informed Consent)
+
+## Compliance enactment (making changes in order to establish or re-establish compliance with a regulation)
+-> Did not extract this information as irrelevant for our work
+
+
+------------------------------------------------------------------------------------------------------------------
+### New categories
+
+
+## Compliance rule definition
+- Codify reference architecture validation script (Reference architecture modelling and compliance checking)
+- Define compliance checks (Data Protection by Design Tool for Automated GDPR Compliance Verification Based on Semantically Modelled Informed Consent)
+
+
+## Compliance target processing
+- Data collection analysis (An Empirical Evaluation of GDPR Compliance Violations in Android mHealth Apps)
+- Code analysis  (Are they Toeing the Line? Diagnosing Privacy Compliance Violations among Browser Extensions)
+- Metadata identification (AI-Enabled Automation for Completeness Checking of Privacy Policies)
+- Knowledge graph generation (Data Protection by Design Tool for Automated GDPR Compliance Verification Based on Semantically Modelled Informed Consent)
+- Data practice extraction (A combined rule-based and machine learning approach for automated GDPR compliance checking)
+- Questionnaire answering (AI-Enabled Automation for Completeness Checking of Privacy Policies)
+- Model concrete architecture (Reference architecture modelling and compliance checking)
+- Data processing graph generation (Poster: A Systems Approach to GDPR Compliance-by-Design in Web Development Stacks) 
