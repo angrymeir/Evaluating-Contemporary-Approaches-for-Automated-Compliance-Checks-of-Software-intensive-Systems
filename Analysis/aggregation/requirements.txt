@@ -1,0 +1,46 @@
+## Prerequisites
+- Compliance requirements defined
+
+## Usability
+- Simple
+
+
+## Correctness
+- Sound
+- Precise
+- Accurate
+- Use proper evidence
+
+
+
+## Variability
+- Able to handle variability (change over time)
+- Handles ambiguities within regulations (Vagueness)
+- Able to handle variability (change over time)
+- Variability resistant (change over time)
+- Variability resistant
+- 
+
+
+## Performance
+- Scalable (To real-world databases)
+- Scalable (To real-world usage)
+- Fast (no negative impact on development velocity)
+- Fast (no negative impact on lead time)
+- Non-blocking (no negative impact on lead time)
+- 
+
+
+## Nicht zugeordnet
+- Backward compatible
+- Traceability
+- Automatable (activities should be automatable if possible)
+- Extensive documentation (for those parts that can be automatically checked for compliance)
+- Handle non-automatable activities
+- Able to work with natural language requirements
+
+
+## Needs to be part of process
+- Compliance Testing and Verification
+- Continuous compliance monitoring
+- Compliance assessment
