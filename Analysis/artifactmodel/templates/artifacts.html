@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="text-center">
+    <h2><b>Aggregated artifacts in automated compliance checking</b></h2>
+</div>
+<br>
+<br>
+<div class="container">
+    <p>Artifacts were structured following the categories described in <a href='{{ url_for('activities') }}'/>activities</a>.</p>
+    <p>Artifacts were grouped into `input`, `intermediate`and `output`, with `intermediate` being irrelevant for our work.</p>
+    <table class="table table-hover">
+        <tr>
+            <th>Category</th>
+            <th>Artifact Category</th>
+            <th>Details</th>
+            <th>Input/Output</th>
+        </tr>
+        {% for category, art_cat, art_cat_desc, input_output in category_mapping %}
+        <tr>
+            <td><b>{{ category }}</b></td>
+            <td>{{ art_cat }}</td>
+            <td>{{ art_cat_desc }}</td>
+            <td>{{ input_output }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+<br>
+<hr>
+<br>
+<div class="container">
+<h4>Mapping of artifacts to categories</h4>
+    {% for category, art_cat, art_cat_desc, input_output in category_mapping %}
+    <h5>{{ art_cat }}</h5>
+    <div class="table-responsive">
+    <table class="table table-hover">
+    <tr>
+        <th>Artifact</th>
+        <th>Source</th>
+        <th>Confidence Level</th>
+    </tr>
+    {% for _, arts in artifacts.items() %}
+    {% for art in arts %}
+    {% if art_cat == art['Artifact Category'] %}
+    <tr>
+        <td>{{ art['Artifact'] }}</td>
+        <td>{{ art['Industry/Academia'] }}</td>
+        <td>{{ art['Confidence Level'] }}</td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    </table>
+    </div>
+    <br>
+    <br>
+    {% endfor %}
+</div>
+
+{% endblock %}

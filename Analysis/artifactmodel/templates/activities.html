@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="text-center">
+    <h2><b>Aggregated activities in automated compliance checking</b></h2>
+</div>
+<br>
+<br>
+<div class="container">
+    <h4>Activities were aggregated into the following categories</h4>
+<table class="table table-hover">
+    <tr>
+        <th>Category</th>
+        <th>Details</th>
+    </tr>
+    {% for category, acts in activities.items() %}
+    <tr>
+        <td>{{ category }}</td>
+        <td>{{ acts[0]['Category Description'] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+</div>
+<br>
+<hr>
+<br>
+<div class="container">
+    <h4>Mapping of activities to categories</h4>
+<table class="table table-hover">
+    <tr>
+        <th>Category</th>
+        <th>Name</th>
+        <th>Explanation</th>
+        <th>Source</th>
+        <th>Confidence Level</th>
+    </tr>
+    {% for category, acts in activities.items() %}
+    {% for act in acts %}
+    <tr>
+        <td><b>{{ category }}</b></td>
+        <td>{{ act['Activity'] }}</td>
+        <td>{{ act['Reference'] }}</td>
+        <td>{{ act['Industry/Academia'] }}</td>
+        <td>{{ act['Confidence Level'] }}</td>
+    </tr>
+    {% endfor %}
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    {% endfor %}
+</table>
+</div>
+
+{% endblock %}

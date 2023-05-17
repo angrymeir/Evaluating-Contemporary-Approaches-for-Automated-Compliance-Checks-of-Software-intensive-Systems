@@ -1,26 +1,17 @@
-# from graphlib import TopologicalSorter
-
-
-# def generate_activity_graph(activities):
-#     ts = TopologicalSorter()
-#     for activity in activities:
-#         if activity['Type (Activity/Artifact)'] == 'activity':
-#             predecessors = set()
-#             if activity['Predecessor (if activity)'] in ['--', '—']:
-#                #print(activity)
-#                ts.add(activity['Name'])
-#                #pass
-#             else:
-#                raw_predecessors = activity['Predecessor (if activity)'].split(',')
-#                for predecessor in raw_predecessors:
-#                    ts.add(activity['Name'], predecessor.strip())
-#     ts.prepare()
-#     return ts
-
-
 def filter_artifacts(activities_artifacts):
     return list(filter(lambda x: x['Type (Activity/Artifact)'] == 'artifact', activities_artifacts))
 
 
 def filter_activities(activities_artifacts):
     return list(filter(lambda x: x['Type (Activity/Artifact)'] == 'activity', activities_artifacts))
+
+
+def map_art_cats_to_act_cats(categories):
+    mapping = []
+    for category, cats in categories.items():
+        art_cats = []
+        for cat in cats:
+            if cat['Artifact Category'] not in art_cats and cat['Input/Intermediate/Output'] != 'Intermediate':
+                art_cats.append(cat['Artifact Category'])
+                mapping.append((category, cat['Artifact Category'], cat['Artifact Category Description'], cat['Input/Intermediate/Output']))
+    return mapping

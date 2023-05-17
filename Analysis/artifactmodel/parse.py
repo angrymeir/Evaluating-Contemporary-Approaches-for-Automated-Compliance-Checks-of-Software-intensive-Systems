@@ -16,12 +16,23 @@ def __load_aggregation_data(path):
     with open(path, 'r') as f:
         reader = csv.DictReader(f, delimiter=';')
         for row in reader:
-            category[row['Category']].append(row)
+            try:
+                category[row['Category']].append(row)
+            except KeyError:
+                category[row['Activity Category']].append(row)
     return category
 
 
 def load_aggregated_demands():
     return __load_aggregation_data('data/00_requirements_aggregated.csv')
+
+
+def load_aggregated_activities():
+    return __load_aggregation_data('data/01_activities_aggregated.csv')
+
+
+def load_aggregated_artifacts():
+    return __load_aggregation_data('data/02_artifacts_aggregated.csv')
 
 
 def load_activities_artifacts():

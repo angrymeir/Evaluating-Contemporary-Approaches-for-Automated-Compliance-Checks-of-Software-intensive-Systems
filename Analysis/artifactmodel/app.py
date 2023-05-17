@@ -1,13 +1,18 @@
 from flask import Flask, render_template, abort
-from parse import load_activities_artifacts, load_automation_approaches, load_aggregated_demands
-from process import filter_artifacts, filter_activities
+from parse import load_activities_artifacts, load_automation_approaches, load_aggregated_demands, load_aggregated_activities, load_aggregated_artifacts
+from process import filter_artifacts, filter_activities, map_art_cats_to_act_cats
 from glob import glob
 
 visualizations = 'visualizsations'
 approach_visualization = visualizations + '/approach_visualization'
 
 app = Flask(__name__)
+
 aggr_demands = load_aggregated_demands()
+aggr_activities = load_aggregated_activities()
+aggr_artifacts = load_aggregated_artifacts()
+artifacts_category_mapping = map_art_cats_to_act_cats(aggr_artifacts)
+
 activities_artifacts = load_activities_artifacts()
 all_automation_approaches = load_automation_approaches()
 automation_approaches = {}
@@ -43,6 +48,18 @@ def approaches():
 def demands():
     context = {'demands': aggr_demands}
     return render_template('demands.html', **context)
+
+
+@app.route('/activities')
+def activities():
+    context = {'activities': aggr_activities}
+    return render_template('activities.html', **context)
+
+
+@app.route('/artifacts')
+def artifacts():
+    context = {'artifacts': aggr_artifacts, 'category_mapping': artifacts_category_mapping}
+    return render_template('artifacts.html', **context)
 
 
 @app.route('/approach/<approach>')
