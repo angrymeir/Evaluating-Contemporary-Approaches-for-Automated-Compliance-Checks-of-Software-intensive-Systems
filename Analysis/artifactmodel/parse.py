@@ -11,8 +11,17 @@ def __load_data(path):
     return papers
 
 
-def load_requirements():
-    return __load_data('data/00_requirements.csv')
+def __load_aggregation_data(path):
+    category = defaultdict(list)
+    with open(path, 'r') as f:
+        reader = csv.DictReader(f, delimiter=';')
+        for row in reader:
+            category[row['Category']].append(row)
+    return category
+
+
+def load_aggregated_demands():
+    return __load_aggregation_data('data/00_requirements_aggregated.csv')
 
 
 def load_activities_artifacts():

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="text-center">
+    <h2><b>Demands on automated compliance checking processes</b></h2>
+</div>
+<div class="container">
+<table class="table table-hover">
+    <tr>
+        <th>Category</th>
+        <th>Name</th>
+        <th>Explanation</th>
+        <th>Source</th>
+        <th>Confidence Level</th>
+    </tr>
+    {% for category, demand in demands.items() %}
+    {% for d in demand %}
+    <tr>
+        <td><b>{{ category|e }}</b></td>
+        <td>{{ d['Name']|e }}</td>
+        <td>{{ d['Detail']|e }}</td>
+        <td>{{ d['Industry/Academia']|e }}</td>
+        <td>{{ d['Confidence Level']|e }}</td>
+    </tr>
+    {% endfor %}
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+    {% endfor %}
+</table>
+</div>
+
+{% endblock %}
