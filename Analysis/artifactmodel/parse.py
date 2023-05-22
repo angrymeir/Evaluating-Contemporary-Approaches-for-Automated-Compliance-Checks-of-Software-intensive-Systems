@@ -16,7 +16,6 @@ def __load_aggregation_data(path):
     with open(path, 'r') as f:
         reader = csv.DictReader(f, delimiter=';')
         for row in reader:
-            print(row)
             try:
                 category[row['Category']].append(row)
             except KeyError:
