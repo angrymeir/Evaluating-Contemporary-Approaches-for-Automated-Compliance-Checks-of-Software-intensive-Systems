@@ -35,3 +35,8 @@
 - Medium/High false positive rate (<80% Precision)
 - Low false positive rate (>=80% Precision)
 - No false positives
+
+## Reproducibility
+- Not possible (Not open-source, no explanations)
+- Possible, but with adjustments
+- Possible, without adjustments
